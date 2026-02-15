@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <table>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" required maxlength="50"></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" required maxlength="50"></td>
+                </tr>
+                <tr>
+                    <td>Father's Name:</td>
+                    <td><input type="text" maxlength="100"></td>
+                </tr>
+                <tr>
+                    <td>Mother's Name:</td>
+                    <td><input type="text" maxlength="100"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email"></td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td><input type="date"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+
+                    <legend>Academic Information</legend>
+            <table>
+                <tr>
+                    <td>Interests:</td>
+                    <td><input type="checkbox" name="interests" value="sports"> Sports
+                        <input type="checkbox" name="interests" value="music"> Music
+                        <input type="checkbox" name="interests" value="reading"> Reading
+                        <input type="checkbox" name="interests" value="others">others</td>
+                </tr>
+                <tr>
+                    <td>Course:</td>
+                    <td>
+                        <select name="Course">
+                            <option value="cse">CSE</option>
+                            <option value="bba">BBA</option>
+                            <option value="eee">EEE</option>
+                        </select>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>HSC Certificate:</td>
+                    <td><input type="file" required></td>
+                </tr>
+            </table>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
