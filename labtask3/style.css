@@ -39,14 +39,14 @@
     width: 60px;
     height: 40px;
     border-radius: 5px;
-    background-color: lightblue;
+    background-color: lightsteelblue;
     border: 1px solid gray;
     font-size: 18px;
     cursor: pointer;
 }
 
 .operator {
-    background-color: lightcoral;
+    background-color: lightblue;
 }
 
 .btn:hover {
