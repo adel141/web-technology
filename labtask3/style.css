@@ -1,0 +1,30 @@
+*{
+    font-family: 'Courier New';
+}
+
+#calculator {
+    width: 300px;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: lightslategray;
+}
+
+#display {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    text-align: right;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: lightgray;
+    font-size: 18px;
+}
+
+#result {
+    text-align: left;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
