@@ -123,26 +123,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <td>
                 <select name="course_section">
                     <option value="">Select a Course</option>
-                    <option value="Computer Science" <?php echo $course_section === 'Computer Science' ? 'selected' : ''; ?>>Computer Science</option>
-                    <option value="Engineering" <?php echo $course_section === 'Engineering' ? 'selected' : ''; ?>>Engineering</option>
-                    <option value="Business" <?php echo $course_section === 'Business' ? 'selected' : ''; ?>>Business</option>
-                    <option value="Medicine" <?php echo $course_section === 'Medicine' ? 'selected' : ''; ?>>Medicine</option>
+                    <option value="IP_A" <?php echo $course_section === 'IP_A' ? 'selected' : ''; ?>>Introduction to Programming Section A</option>
+                    <option value="COA_B" <?php echo $course_section === 'COA_B' ? 'selected' : ''; ?>>Computer Organization and Architecture Section B</option>
+                    <option value="WebTech_B" <?php echo $course_section === 'WebTech_B' ? 'selected' : ''; ?>>Web Technologies Section B</option>
+                    <option value="OOP_A" <?php echo $course_section === 'OOP_A' ? 'selected' : ''; ?>>Object-Oriented Programming Section A</option>
                 </select>
             </td>
             <td><span style="color:red;"><?php echo $courseErr; ?></span></td>
         </tr>
         <tr>
-            <td colspan="2">
+            <td colspan="2" style="text-align: center;">
                 <input type="checkbox" name="terms" <?php echo (isset($_POST['terms'])) ? 'checked' : ''; ?>>
                 <label>I accept Terms  Conditions</label>
             </td>
             <td><span style="color:red;"><?php echo $termsErr; ?></span></td>
         </tr>
-        <?php if ($emptyErr): ?>
-        <tr>
-            <td colspan="3"><span style="color:red;"><?php echo $emptyErr; ?></span></td>
-        </tr>
-        <?php endif; ?>
+        <?php if ($emptyErr) echo "<tr><td colspan='3'><span style='color:red;'>" . $emptyErr . "</span></td></tr>"; ?>
+  
     </table>
 
     <input type="submit" value="Register">
