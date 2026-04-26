@@ -2,6 +2,11 @@
     font-family: 'Courier New';
 }
 
+body {
+    background-color: black;
+    padding: 200px 0 0 0  ;
+}
+
 #calculator {
     width: 300px;
     margin: 0px auto;
