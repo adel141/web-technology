@@ -6,7 +6,7 @@ $editQuery = "SELECT * FROM students WHERE id=$id";
 $result = mysqli_query($conn, $editQuery);
 $row = mysqli_fetch_assoc($result);
 
-if(isset($_POST['update'])) {
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $name = $_POST['name'];
     $email = $_POST['email'];
     $dept = $_POST['dept'];
@@ -27,5 +27,5 @@ if(isset($_POST['update'])) {
         <option value="EEE">EEE</option>
     </select><br><br>
 
-    <input type="submit" name="update" value="Update">
+    <input type="submit" value="Update">
 </form>
