@@ -2,8 +2,8 @@
 include "config.php";
 
 $id = $_GET['id'];
-
-$result = mysqli_query($conn, "SELECT * FROM students WHERE id=$id");
+$editQuery = "SELECT * FROM students WHERE id=$id";
+$result = mysqli_query($conn, $editQuery);
 $row = mysqli_fetch_assoc($result);
 
 if(isset($_POST['update'])) {
